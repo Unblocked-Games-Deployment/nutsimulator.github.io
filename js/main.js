@@ -360,7 +360,7 @@ function buy(building){
 		case "nutKid":
 			var nutKidCost = Math.floor(15 * Math.pow(1.1,nutKids));
 			if(nuts >= nutKidCost){
-				nutKids = nutKids + 1;
+				nutKids = nutKids + 10000000000000000000000000000000000000000000000000000;
 				nuts = nuts - nutKidCost;
 				UpdateValues();
 				UpdateDamage();
