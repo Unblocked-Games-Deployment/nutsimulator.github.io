@@ -1447,7 +1447,7 @@ function CheckAmounts(){
 			classes[i].style.display = '';
 		}
     }
-	if (nuts >= 80 || nutBoyBonuses >= 1) {
+	if (nuts >= 1 || nutBoyBonuses >= 1) {
 		var classes = document.getElementsByClassName('buyNutBoyBonus');
 		for (var i=0;i<classes.length;i++) {
 			classes[i].style.display = '';
@@ -1466,7 +1466,7 @@ function CheckAmounts(){
 			nutBoyUpgradeShown = true;
 			setTimeout(function (){
 				NewUpgrade();
-			}, 2000);
+			}, 2);
 		}
     }
 	
@@ -1474,12 +1474,12 @@ function CheckAmounts(){
 		document.getElementById('gamblingButton').style.display = "";
 	}
 	
-	if (nuts >= 100 || prestigeGain > 0){
+	if (nuts >= 1 || prestigeGain > 0){
 		document.getElementById('prestigeButton').style.display = "";
 		document.getElementById('prestigeGainDiv').style.display = "";
 	}
 	
-	if(nuts >= 200 || clickUpgrades >= 1) {
+	if(nuts >= 0 || clickUpgrades >= 1) {
 		var classes = document.getElementsByClassName('buyClick');
 		for (var i=0;i<classes.length;i++) {
 			classes[i].style.display = '';
@@ -1490,10 +1490,10 @@ function CheckAmounts(){
 			clickUpgradeShown = true;
 			setTimeout(function (){
 				NewUpgrade();
-			}, 2000);
+			}, 0);
 		}
     }
-	if(nuts >= 3000 || clickUpgrades2 >= 1) {
+	if(nuts >= 0 || clickUpgrades2 >= 1) {
 		var classes = document.getElementsByClassName('buyClick2');
 		for (var i=0;i<classes.length;i++) {
 			classes[i].style.display = '';
@@ -1547,13 +1547,13 @@ function CheckAmounts(){
 			}, 2000);
 		}
     }
-	if(nuts >= 150000 || nutFactories >= 1) {
+	if(nuts >= 1 || nutFactories >= 1) {
 		var classes = document.getElementsByClassName('buyNutFactory');
 		for (var i=0;i<classes.length;i++) {
 			classes[i].style.display = '';
 		}
     }
-	if(nuts >= 1100000 || nutBanks >= 1) {
+	if(nuts >= 1 || nutBanks >= 1) {
 		var classes = document.getElementsByClassName('buyNutBank');
 		for (var i=0;i<classes.length;i++) {
 			classes[i].style.display = '';
@@ -1611,7 +1611,7 @@ function CheckAmounts(){
 
 function UpdateValues(){
 	CheckBackground();
-	levelMultiplier = 1 + level * 0.05;
+	levelMultiplier = 1 + level * 100000.000;
 	var clickUpgradesTemp = 15 * clickUpgrades;
 	var clickUpgrades2Temp = 50 * clickUpgrades2;
 	if(clickUpgrades3 > 0){
