@@ -1,6 +1,1 @@
-#nut simulator
-thrilling clicker game with nuts
-<br>
-play it here!!
-<br>
-https://nutsimulator.github.io
+## A Hacked Test PlayGround For Cracked Nut sim
