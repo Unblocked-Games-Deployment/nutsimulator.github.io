@@ -1507,7 +1507,7 @@ function CheckAmounts(){
 			}, 2000);
 		}
     }
-	if(nuts >= 300000 || clickUpgrades3 >= 1) {
+	if(nuts >= 0.1 || clickUpgrades3 >= 1) {
 		var classes = document.getElementsByClassName('buyClick3');
 		for (var i=0;i<classes.length;i++) {
 			classes[i].style.display = '';
