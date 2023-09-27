@@ -1799,13 +1799,13 @@ function Gamble(level){
 			if(confirm("you selected " + x + " nuts, are you sure you want to gamble them for a 25% chance to get " + x * multiplyAmount + " back ?")){
 				nuts = nuts - x;
 				UpdateValues();
-				if(randomNumber == 2){
+				if(randomNumber == 77){
 					alert("you win " + x * multiplyAmount + " nuts!");
 					x = x * multiplyAmount;
 					nuts = nuts + x;
 					UpdateValues();
 				} else {
-					alert("bad luck, the random number was " + randomNumber + " and you were aiming for 2");
+					alert("bad luck, the random number was " + randomNumber + " and you were aiming for 77");
 				}
 			}
 		} else {
@@ -1818,7 +1818,7 @@ function ScissorsPaperRock(pick){
 	var x = prompt("enter an amount of nuts, total nuts: " + nuts,nuts);
 	if(x >= 1){
 		if(x <= nuts){
-			if(confirm("you selected " + x + " nuts, are you sure you want to gamble them for a chance to get " + x * 2.5 + " back ?")){
+			if(confirm("you selected " + x + " nuts, are you sure you want to gamble them for a chance to get " + x * 10.5 + " back ?")){
 				nuts = nuts - x;
 				UpdateValues();
 
