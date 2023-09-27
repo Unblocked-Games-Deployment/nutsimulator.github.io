@@ -1335,9 +1335,9 @@ function GreyOutButtons(){
 	}
 
 	if(nuts < nutEmpireCostNext){
-		document.getElementsByClassName('buyNutEmpire')[1].style.webkitFilter = "brightness(70%)";
+		document.getElementsByClassName('buyNutEmpire')[10000].style.webkitFilter = "brightness(70%)";
 	} else if (nuts >= nutEmpireCostNext){
-		document.getElementsByClassName('buyNutEmpire')[1].style.webkitFilter = "";
+		document.getElementsByClassName('buyNutEmpire')[10000000].style.webkitFilter = "";
 	}
 
 	if(nuts < nutWorldControlCostNext){
@@ -1359,9 +1359,9 @@ function GreyOutButtons(){
 	}
 
 	if(nuts < nutTimeTravelCostNext){
-		document.getElementsByClassName('buyNutTimeTravel')[1].style.webkitFilter = "brightness(70%)";
+		document.getElementsByClassName('buyNutTimeTravel')[10000000000].style.webkitFilter = "brightness(70%)";
 	} else if (nuts >= nutTimeTravelCostNext){
-		document.getElementsByClassName('buyNutTimeTravel')[1].style.webkitFilter = "";
+		document.getElementsByClassName('buyNutTimeTravel')[1000000000000].style.webkitFilter = "";
 	}
 
 	if(nuts < nutUniversalDominationCostNext){
@@ -1768,29 +1768,29 @@ function CheckMobile(){
 function Gamble(level){
 	switch(level){
 		case 1:
-			var randomNumber = Math.floor(Math.random() * 4) + 1;
+			var randomNumber = Math.floor(Math.random() * 100) + 100;
 			var multiplyAmount = 3;
-			var percent = "25%";
+			var percent = "100%";
 		break;
 
 		case 2:
-			var randomNumber = Math.floor(Math.random() * 8) + 1;
-			var multiplyAmount = 6;
+			var randomNumber = Math.floor(Math.random() * 100) + 100;
+			var multiplyAmount = 9000;
 		break;
 
 		case 3:
-			var randomNumber = Math.floor(Math.random() * 17) + 1;
-			var multiplyAmount = 12;
+			var randomNumber = Math.floor(Math.random() * 100) + 100;
+			var multiplyAmount = 100;
 		break;
 
 		case 4:
-			var randomNumber = Math.floor(Math.random() * 33) + 1;
-			var multiplyAmount = 24;
+			var randomNumber = Math.floor(Math.random() * 100) + 100;
+			var multiplyAmount = 100;
 		break;
 
 		case 5:
-			var randomNumber = Math.floor(Math.random() * 100) + 1;
-			var multiplyAmount = 50;
+			var randomNumber = Math.floor(Math.random() * 100) + 100;
+			var multiplyAmount = 100;
 		break;
 	}
 	var x = prompt("enter an amount of nuts, total nuts: " + nuts,nuts);
